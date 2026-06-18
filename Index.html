@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfredo León Arreola</title>
+    <link rel="stylesheet" href="Personal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <span class="nav-brand">Alfredo León Arreola</span>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#formacion">Formación</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#criptografia">Criptografía</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO / PRESENTACIÓN ===== -->
+    <section id="inicio" class="hero">
+        <div class="hero-card">
+            <div class="hero-photo-wrap">
+                <img src="Foto.jpg" alt="Alfredo León Arreola" class="profile-photo"
+                     onerror="this.style.display='none'; document.getElementById('photo-placeholder').style.display='flex';">
+                <div id="photo-placeholder" class="photo-placeholder" style="display:none;">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+
+            <div class="hero-info">
+                <h1>Alfredo León Arreola</h1>
+                <p class="subtitle">Ingeniería en Sistemas Computacionales &mdash; ESCOM IPN</p>
+
+                <p class="email-line">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:alfredo93.la@gmail.com">alfredo93.la@gmail.com</a>
+                </p>
+
+
+                <div class="cta-row">
+                    <a href="CV_Alfredo_León_Arreola_Final.pdf" download class="cta-btn cv-btn">
+                        <i class="fas fa-file-pdf"></i> Descargar CV
+                    </a>
+                    <a href="#" class="cta-btn key-btn">
+                        <i class="fas fa-key"></i> Mi Llave Pública
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FORMACIÓN ACADÉMICA ===== -->
+    <section id="formacion" class="content-section">
+        <div class="section-card">
+            <h2><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <h3>Ingeniería en Sistemas Computacionales</h3>
+                        <span class="institution">Escuela Superior de Cómputo — Instituto Politécnico Nacional</span>
+                        <span class="period">2020 – presente</span>
+                        <p>Carrera enfocada en el diseño, desarrollo y análisis de sistemas de software y hardware, con énfasis en algoritmos, redes, bases de datos, seguridad informática y criptografía.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <h3>Técnico en Informática</h3>
+                        <span class="institution">CECYT 12 "José María Morelos y Pavón" — Instituto Politécnico Nacional</span>
+                        <span class="period">2017 – 2020</span>
+                        <p>Bachillerato tecnológico con especialidad en informática, orientado al mantenimiento de equipos de cómputo, programación básica y administración de redes.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOBBIES ===== -->
+    <section id="hobbies" class="content-section alt-bg">
+        <div class="section-card">
+            <h2><i class="fas fa-heart"></i> Hobbies</h2>
+            <div class="hobbies-grid">
+
+                <div class="hobby-item">
+                    <div class="hobby-img-wrap">
+                        <img src="hobby1.jpg" alt="Fotografía" class="hobby-img"
+                             onerror="this.parentElement.innerHTML='<div class=\'hobby-img-placeholder\'><i class=\'fas fa-camera-retro\'></i><span>Fotografía</span></div>'">
+                    </div>
+                    <div class="hobby-caption">
+                        <h3>Fotografía</h3>
+                        <p>Capturar momentos y perspectivas únicas del mundo a través del lente.</p>
+                    </div>
+                </div>
+
+                <div class="hobby-item">
+                    <div class="hobby-img-wrap">
+                        <img src="hobby2.jpg" alt="Senderismo" class="hobby-img"
+                             onerror="this.parentElement.innerHTML='<div class=\'hobby-img-placeholder\'><i class=\'fas fa-mountain\'></i><span>Senderismo</span></div>'">
+                    </div>
+                    <div class="hobby-caption">
+                        <h3>Senderismo</h3>
+                        <p>Explorar senderos y paisajes naturales, desconectarme y cargar energías.</p>
+                    </div>
+                </div>
+
+                <div class="hobby-item">
+                    <div class="hobby-img-wrap">
+                        <img src="hobby3.jpg" alt="Videojuegos" class="hobby-img"
+                             onerror="this.parentElement.innerHTML='<div class=\'hobby-img-placeholder\'><i class=\'fas fa-gamepad\'></i><span>Videojuegos</span></div>'">
+                    </div>
+                    <div class="hobby-caption">
+                        <h3>Videojuegos</h3>
+                        <p>Estrategia, narrativa y mundos abiertos son mis géneros favoritos.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CRIPTOGRAFÍA ===== -->
+    <section id="criptografia" class="content-section">
+        <div class="section-card">
+            <h2><i class="fas fa-lock"></i> Acerca de Criptografía</h2>
+
+            <div class="crypto-feature">
+                <div class="crypto-img-wrap">
+                    <img src="turing.jpg" alt="Alan Turing" class="crypto-img"
+                         onerror="this.parentElement.innerHTML='<div class=\'crypto-img-placeholder\'><i class=\'fas fa-chess-knight\'></i></div>'">
+                </div>
+                <div class="crypto-text">
+                    <h3>Alan Turing (1912 – 1954)</h3>
+                    <p class="crypto-subtitle">Padre de la Computación y Héroe de la Criptografía Moderna</p>
+                    <p>
+                        Alan Mathison Turing fue un matemático, lógico y criptógrafo británico cuya influencia en la historia del siglo XX es difícil de exagerar. Durante la Segunda Guerra Mundial trabajó para el Gobierno de Su Majestad en Bletchley Park, donde lideró el equipo que descifró el código <strong>Enigma</strong> utilizado por la Alemania nazi para cifrar sus comunicaciones militares.
+                    </p>
+                    <p>
+                        Junto a Gordon Welchman, Turing mejoró radicalmente la <em>Bombe</em>, una máquina electromecánica que probaba sistemáticamente miles de configuraciones de Enigma por minuto. Se estima que este logro acortó la guerra en Europa entre dos y cuatro años y salvó millones de vidas.
+                    </p>
+                    <p>
+                        Más allá de la guerra, Turing sentó las bases teóricas de la computación con su concepto de la <strong>Máquina de Turing</strong> y anticipó campos como la inteligencia artificial con su famoso "Test de Turing" (1950). En 2009 el gobierno británico le ofreció una disculpa oficial por el trato que recibió, y en 2021 su rostro apareció en el billete de 50 libras esterlinas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="crypto-quote">
+                <blockquote>
+                    "We can only see a short distance ahead, but we can see plenty there that needs to be done."
+                    <footer>— Alan Turing, <cite>Computing Machinery and Intelligence</cite> (1950)</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="content-section alt-bg">
+        <div class="section-card contact-card">
+            <h2><i class="fas fa-address-card"></i> Contacto</h2>
+            <div class="contact-grid">
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <span class="contact-label">Correo</span>
+                        <a href="mailto:alfredo93.la@gmail.com">alfredo93.la@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <div>
+                        <span class="contact-label">Currículum Vitae</span>
+                        <a href="CV_Alfredo_León_Arreola_Final.pdf" download>Descargar PDF</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-key"></i>
+                    <div>
+                        <span class="contact-label">Llave Pública RSA</span>
+                        <a href="#">Mi Llave Pública</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>&copy; 2025 Alfredo León Arreola &mdash; Introducción a la Criptografía</p>
+    </footer>
+
+</body>
+</html>
