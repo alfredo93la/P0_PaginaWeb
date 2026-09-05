@@ -3,89 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página personal de Alfredo León Arreola, estudiante de Ingeniería en Sistemas Computacionales.">
-    <title>Alfredo León Arreola | Página personal</title>
+    <title>Alfredo León Arreola</title>
     <link rel="stylesheet" href="Personal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar" aria-label="Navegación principal">
-        <a class="nav-brand" href="#inicio">Alfredo León Arreola</a>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <span class="nav-brand">Alfredo León Arreola</span>
         <div class="nav-links">
-            <a href="#inicio">Inicio</a><a href="#formacion">Formación</a><a href="#hobbies">Pasatiempos</a><a href="#criptografia">Criptografía</a><a href="#contacto">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#formacion">Formación</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#criptografia">Criptografía</a>
+            <a href="#contacto">Contacto</a>
         </div>
     </nav>
-    <main>
-        <section id="inicio" class="hero" aria-labelledby="titulo-principal">
-            <div class="hero-card">
-                <div class="hero-photo-wrap"><img src="Foto.jpg" alt="Retrato de Alfredo León Arreola" class="profile-photo"></div>
-                <div class="hero-info">
-                    <p class="eyebrow">Página personal</p>
-                    <h1 id="titulo-principal">Alfredo León Arreola</h1>
-                    <p class="subtitle">Estudiante de Ingeniería en Sistemas Computacionales — ESCOM, IPN</p>
-                    <p class="hero-description">Me interesa crear soluciones de software útiles y claras. Tengo experiencia en desarrollo web Full Stack y soporte técnico, y actualmente continúo fortaleciendo mis habilidades en tecnologías modernas, seguridad y criptografía.</p>
-                    <p class="email-line"><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:alfredo93.la@gmail.com">alfredo93.la@gmail.com</a></p>
-                    <div class="social-row" aria-label="Redes profesionales"><a class="social-btn linkedin" href="https://www.linkedin.com/in/alfleonarr/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></div>
-                    <div class="cta-row">
-                        <a href="CV_Alfredo_León_Arreola_Final.pdf" download class="cta-btn cv-btn"><i class="fas fa-file-arrow-down" aria-hidden="true"></i> Descargar CV</a>
-                        <a href="clave_publica_Alfredo.pem" download class="cta-btn key-btn"><i class="fas fa-key" aria-hidden="true"></i> Descargar llave pública</a>
+
+    <!-- ===== HERO / PRESENTACIÓN ===== -->
+    <section id="inicio" class="hero">
+        <div class="hero-card">
+            <div class="hero-photo-wrap">
+                <img src="Foto.jpg" alt="Alfredo León Arreola" class="profile-photo"
+                     onerror="this.style.display='none'; document.getElementById('photo-placeholder').style.display='flex';">
+                <div id="photo-placeholder" class="photo-placeholder" style="display:none;">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+
+            <div class="hero-info">
+                <h1>Alfredo León Arreola</h1>
+                <p class="subtitle">Ingeniería en Sistemas Computacionales &mdash; ESCOM IPN</p>
+
+                <p class="email-line">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:alfredo93.la@gmail.com">alfredo93.la@gmail.com</a>
+                </p>
+
+
+                <div class="cta-row">
+                    <a href="CV_Alfredo_León_Arreola_Final.pdf" download class="cta-btn cv-btn">
+                        <i class="fas fa-file-arrow-down"></i> Descargar CV
+                    </a>
+                    <a href="clave_publica_Alfredo.pem" download class="cta-btn key-btn">
+                        <i class="fas fa-key"></i> Mi Llave Pública
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FORMACIÓN ACADÉMICA ===== -->
+    <section id="formacion" class="content-section">
+        <div class="section-card">
+            <h2><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <h3>Ingeniería en Sistemas Computacionales</h3>
+                        <span class="institution">Escuela Superior de Cómputo — Instituto Politécnico Nacional</span>
+                        <span class="period">2020 – presente</span>
+                        <p>Carrera enfocada en el diseño, desarrollo y análisis de sistemas de software y hardware, con énfasis en algoritmos, redes, bases de datos, seguridad informática y criptografía.</p>
                     </div>
                 </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <h3>Técnico en Informática</h3>
+                        <span class="institution">CECYT 12 "José María Morelos y Pavón" — Instituto Politécnico Nacional</span>
+                        <span class="period">2017 – 2020</span>
+                        <p>Bachillerato tecnológico con especialidad en informática, orientado al mantenimiento de equipos de cómputo, programación básica y administración de redes.</p>
+                    </div>
+                </div>
+
             </div>
-        </section>
-        <section id="formacion" class="content-section" aria-labelledby="titulo-formacion">
-            <div class="section-card">
-                <h2 id="titulo-formacion"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Formación académica</h2>
-                <div class="timeline">
-<<<<<<< HEAD
-                    <article class="timeline-item"><div class="timeline-dot"></div><div class="timeline-body"><h3>Ingeniería en Sistemas Computacionales</h3><span class="institution">Escuela Superior de Cómputo — Instituto Politécnico Nacional</span><span class="period">En curso · término estimado: diciembre de 2027</span><p>Formación orientada al desarrollo de software, algoritmos, bases de datos, redes, seguridad informática y criptografía.</p></div></article>
-                    <article class="timeline-item"><div class="timeline-dot"></div><div class="timeline-body"><h3>Bachillerato Técnico en Informática</h3><span class="institution">CECyT 12 “José María Morelos y Pavón” — Instituto Politécnico Nacional</span><span class="period">2017 – 2020</span><p>Educación media superior tecnológica con especialidad en informática.</p></div></article>
-                    <article class="timeline-item"><div class="timeline-dot"></div><div class="timeline-body"><h3>Educación secundaria</h3><span class="institution">Institución por actualizar</span><span class="period">Información académica pendiente de confirmar</span><p>Este apartado se incluye para mostrar la trayectoria desde secundaria, conforme a los requisitos de la práctica.</p></div></article>
-=======
-                    <article class="timeline-item"><div class="timeline-dot"></div><div class="timeline-body"><h3>Ingeniería en Sistemas Computacionales</h3><span class="institution">Escuela Superior de Cómputo — Instituto Politécnico Nacional</span><span class="period">En curso · término estimado: diciembre de 2027</span></div></article>
-                    <article class="timeline-item"><div class="timeline-dot"></div><div class="timeline-body"><h3>Bachillerato Técnico en Informática</h3><span class="institution">CECyT 12 “José María Morelos y Pavón” — Instituto Politécnico Nacional</span><span class="period">2017 – 2020</span></div></article>
-                    <article class="timeline-item"><div class="timeline-dot"></div><div class="timeline-body"><h3>Educación secundaria</h3><span class="institution">Escuela Secundaria No. 214 "Carlos Marx"</span><span class="period">2014 – 2017</span></div></article>
->>>>>>> e5953dd910a150ac8b4370b1b792cc09fa7923c7
+        </div>
+    </section>
+
+    <!-- ===== HOBBIES ===== -->
+    <section id="hobbies" class="content-section alt-bg">
+        <div class="section-card">
+            <h2><i class="fas fa-heart"></i> Hobbies</h2>
+            <div class="hobbies-grid">
+
+                <div class="hobby-item">
+                    <div class="hobby-img-wrap">
+                        <img src="hobby1.jpg" alt="Fotografía" class="hobby-img"
+                             onerror="this.parentElement.innerHTML='<div class=\'hobby-img-placeholder\'><i class=\'fas fa-camera-retro\'></i><span>Fotografía</span></div>'">
+                    </div>
+                    <div class="hobby-caption">
+                        <h3>Fotografía</h3>
+                        <p>Capturar momentos y perspectivas únicas del mundo a través del lente.</p>
+                    </div>
+                </div>
+
+                <div class="hobby-item">
+                    <div class="hobby-img-wrap">
+                        <img src="hobby2.jpg" alt="Senderismo" class="hobby-img"
+                             onerror="this.parentElement.innerHTML='<div class=\'hobby-img-placeholder\'><i class=\'fas fa-mountain\'></i><span>Senderismo</span></div>'">
+                    </div>
+                    <div class="hobby-caption">
+                        <h3>Senderismo</h3>
+                        <p>Explorar senderos y paisajes naturales, desconectarme y cargar energías.</p>
+                    </div>
+                </div>
+
+                <div class="hobby-item">
+                    <div class="hobby-img-wrap">
+                        <img src="hobby3.jpg" alt="Videojuegos" class="hobby-img"
+                             onerror="this.parentElement.innerHTML='<div class=\'hobby-img-placeholder\'><i class=\'fas fa-gamepad\'></i><span>Videojuegos</span></div>'">
+                    </div>
+                    <div class="hobby-caption">
+                        <h3>Videojuegos</h3>
+                        <p>Estrategia, narrativa y mundos abiertos son mis géneros favoritos.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CRIPTOGRAFÍA ===== -->
+    <section id="criptografia" class="content-section">
+        <div class="section-card">
+            <h2><i class="fas fa-lock"></i> Acerca de Criptografía</h2>
+
+            <div class="crypto-feature">
+                <div class="crypto-img-wrap">
+                    <img src="turing.jpg" alt="Alan Turing" class="crypto-img"
+                         onerror="this.parentElement.innerHTML='<div class=\'crypto-img-placeholder\'><i class=\'fas fa-chess-knight\'></i></div>'">
+                </div>
+                <div class="crypto-text">
+                    <h3>Alan Turing (1912 – 1954)</h3>
+                    <p class="crypto-subtitle">Padre de la Computación y Héroe de la Criptografía Moderna</p>
+                    <p>
+                        Alan Mathison Turing fue un matemático, lógico y criptógrafo británico cuya influencia en la historia del siglo XX es difícil de exagerar. Durante la Segunda Guerra Mundial trabajó para el Gobierno de Su Majestad en Bletchley Park, donde lideró el equipo que descifró el código <strong>Enigma</strong> utilizado por la Alemania nazi para cifrar sus comunicaciones militares.
+                    </p>
+                    <p>
+                        Junto a Gordon Welchman, Turing mejoró radicalmente la <em>Bombe</em>, una máquina electromecánica que probaba sistemáticamente miles de configuraciones de Enigma por minuto. Se estima que este logro acortó la guerra en Europa entre dos y cuatro años y salvó millones de vidas.
+                    </p>
+                    <p>
+                        Más allá de la guerra, Turing sentó las bases teóricas de la computación con su concepto de la <strong>Máquina de Turing</strong> y anticipó campos como la inteligencia artificial con su famoso "Test de Turing" (1950). En 2009 el gobierno británico le ofreció una disculpa oficial por el trato que recibió, y en 2021 su rostro apareció en el billete de 50 libras esterlinas.
+                    </p>
                 </div>
             </div>
-        </section>
-        <section id="hobbies" class="content-section alt-bg" aria-labelledby="titulo-hobbies">
-            <div class="section-card">
-                <h2 id="titulo-hobbies"><i class="fas fa-heart" aria-hidden="true"></i> Mis pasatiempos favoritos</h2>
-                <div class="hobbies-grid">
-                    <article class="hobby-item"><div class="hobby-img-wrap hobby-icon"><i class="fas fa-camera-retro" aria-hidden="true"></i></div><div class="hobby-caption"><h3>Fotografía</h3><p>Me gusta capturar momentos y encontrar perspectivas únicas a través del lente.</p></div></article>
-                    <article class="hobby-item"><div class="hobby-img-wrap hobby-icon"><i class="fas fa-mountain" aria-hidden="true"></i></div><div class="hobby-caption"><h3>Senderismo</h3><p>Disfruto explorar senderos y paisajes naturales para desconectarme y recargar energía.</p></div></article>
-                    <article class="hobby-item"><div class="hobby-img-wrap hobby-icon"><i class="fas fa-gamepad" aria-hidden="true"></i></div><div class="hobby-caption"><h3>Videojuegos</h3><p>Me atraen los juegos de estrategia, narrativa y mundos abiertos por los retos que proponen.</p></div></article>
-                </div>
+
+            <div class="crypto-quote">
+                <blockquote>
+                    "We can only see a short distance ahead, but we can see plenty there that needs to be done."
+                    <footer>— Alan Turing, <cite>Computing Machinery and Intelligence</cite> (1950)</footer>
+                </blockquote>
             </div>
-        </section>
-        <section id="criptografia" class="content-section" aria-labelledby="titulo-criptografia">
-            <div class="section-card">
-                <h2 id="titulo-criptografia"><i class="fas fa-lock" aria-hidden="true"></i> Tres datos de criptografía</h2>
-                <p class="section-intro">La criptografía permite proteger información, verificar identidades y establecer comunicaciones confiables en la vida digital cotidiana.</p>
-                <div class="crypto-facts">
-                    <article class="crypto-fact"><div class="fact-icon"><i class="fas fa-key" aria-hidden="true"></i></div><div><h3>Una llave pública se puede compartir</h3><p>En la criptografía asimétrica, la llave pública cifra o verifica firmas y puede distribuirse libremente. La llave privada debe mantenerse secreta: con ella se descifra o se firma.</p></div></article>
-                    <article class="crypto-fact"><div class="fact-icon"><i class="fas fa-fingerprint" aria-hidden="true"></i></div><div><h3>Las firmas digitales dan autenticidad</h3><p>Una firma digital permite comprobar que un mensaje fue creado por quien dice haberlo enviado y que no fue modificado durante su transmisión.</p></div></article>
-                    <article class="crypto-fact"><div class="fact-icon"><i class="fas fa-user-secret" aria-hidden="true"></i></div><div><h3>Alan Turing ayudó a descifrar Enigma</h3><p>Durante la Segunda Guerra Mundial, Turing trabajó en Bletchley Park y contribuyó al diseño de métodos para descifrar mensajes cifrados con Enigma, un hito para la criptografía moderna.</p></div></article>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== --->
+    <section id="contacto" class="content-section alt-bg">
+        <div class="section-card contact-card">
+            <h2><i class="fas fa-address-card"></i> Contacto</h2>
+            <div class="contact-grid">
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <span class="contact-label">Correo</span>
+                        <a href="mailto:alfredo93.la@gmail.com">alfredo93.la@gmail.com</a>
+                    </div>
                 </div>
-                <aside class="crypto-quote"><blockquote>“We can only see a short distance ahead, but we can see plenty there that needs to be done.”<footer>— Alan Turing, <cite>Computing Machinery and Intelligence</cite> (1950)</footer></blockquote></aside>
-            </div>
-        </section>
-        <section id="contacto" class="content-section alt-bg" aria-labelledby="titulo-contacto">
-            <div class="section-card contact-card">
-                <h2 id="titulo-contacto"><i class="fas fa-address-card" aria-hidden="true"></i> Contacto</h2>
-                <div class="contact-grid">
-                    <div class="contact-item"><i class="fas fa-envelope" aria-hidden="true"></i><div><span class="contact-label">Correo</span><a href="mailto:alfredo93.la@gmail.com">alfredo93.la@gmail.com</a></div></div>
-                    <div class="contact-item"><i class="fab fa-linkedin" aria-hidden="true"></i><div><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/alfleonarr/" target="_blank" rel="noopener noreferrer">/in/alfleonarr</a></div></div>
-                    <div class="contact-item"><i class="fas fa-key" aria-hidden="true"></i><div><span class="contact-label">Llave pública RSA</span><a href="clave_publica_Alfredo.pem" download>Descargar archivo .pem</a></div></div>
+
+                <div class="contact-item">
+                    <i class="fas fa-file-arrow-down"></i>
+                    <div>
+                        <span class="contact-label">Currículum Vitae</span>
+                        <a href="CV_Alfredo_León_Arreola_Final.pdf" download>Descargar PDF</a>
+                    </div>
                 </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-key"></i>
+                    <div>
+                        <span class="contact-label">Llave Pública RSA</span>
+                        <a href="#">Mi Llave Pública</a>
+                    </div>
+                </div>
+
             </div>
-        </section>
-    </main>
-<<<<<<< HEAD
-    <footer class="footer"><p>© 2026 Alfredo León Arreola — Introducción a la Criptografía</p></footer>
-=======
-    <footer class="footer"><p>© 2026 Alfredo León Arreola — Selected Topics in Cryptography</p></footer>
->>>>>>> e5953dd910a150ac8b4370b1b792cc09fa7923c7
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>&copy; 2025 Alfredo León Arreola &mdash; Introducción a la Criptografía</p>
+    </footer>
+
 </body>
 </html>
